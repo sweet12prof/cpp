@@ -1,5 +1,6 @@
 #include <iostream>
-#include <all.hpp>
+#include <range/v3/all.hpp>
+using namespace ranges;
+int main() {
 
-    std::cout << "Hello World";
 }
