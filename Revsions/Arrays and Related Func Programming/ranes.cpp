@@ -1,4 +1,9 @@
 #include <iostream>
+<<<<<<< HEAD
+#include <range/v3/all.hpp>
+using namespace ranges;
+int main() {
+=======
 #include <algorithm>
 #include <numeric>
 #include <range/v3/all.hpp>
@@ -39,5 +44,6 @@ int main(){
     });
 
     showValues(newVal);
+>>>>>>> 29fd752b36fdd4a077cf05ee08f985a25eb248cb
 
 }
