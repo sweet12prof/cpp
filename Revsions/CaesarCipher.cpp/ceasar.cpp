@@ -4,7 +4,7 @@
 #include <algorithm>
 
 using namespace std;
-string encrypt(string, int);
+string encrypt(string);
 std::string decrypt(string );
 int main()
 {
@@ -13,31 +13,40 @@ int main()
    string newString, encryptedString;
    std::getline(std::cin, newString);
    encryptedString = decrypt(newString);
-   cout << "Encrypted String is: "<< encryptedString;
+   cout << "Encrypted String is: "<< encryptedString <<std::endl;
+  // std::cout << -1 % 26;
 }
 
-std::string encrypt(std::string somestring, int key){
+std::string encrypt(std::string somestring){
     std::string alphaArray {"abcdefghijklmnopqrstuvwxyz "}; 
-    
-    std::string newString;
-
-    cout << somestring.size() << std::endl;
-    for(auto & item : somestring){
-        newString += alphaArray[(alphaArray.find(item) + 3) % (alphaArray.size() )];
+    std::cout << alphaArray.size();
+    std::string encryptedMessage;
+    for(auto item : somestring){
+        encryptedMessage += alphaArray[(alphaArray.find(item) + 3) % alphaArray.size()];
     }
-            
-
-    return newString;
-}
+        return encryptedMessage;
+}   
 
 
 std::string decrypt(std::string someString){
-    std::string alphaArray {"abcdefghijklmnopqrstuvwxyz "}; 
-    std::string newString;
+     std::string alphaArray {"abcdefghijklmnopqrstuvwxyz "}; 
+     std::string decryptedMessage;
+     
+     for(auto item : someString){
+         int pos {alphaArray.find(item)};
+        //cout << "pos -3 is :" << pos - 3;       }  
 
-    for(auto item : someString)
-    {
-        newString += alphaArray[(alphaArray.find(item) % (alphaArray.size())) - 3];
-    }
-    return newString;
+
+         if( pos - 3 <= 0){
+                
+                pos += alphaArray.size() - 3;
+                //cout << pos;
+                decryptedMessage += alphaArray[(pos) % alphaArray.size()];
+         }
+         else 
+                decryptedMessage += alphaArray[(pos - 3) % alphaArray.size()];
+        
+     }
+     
+        return decryptedMessage;
 }
