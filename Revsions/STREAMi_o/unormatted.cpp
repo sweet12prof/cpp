@@ -18,9 +18,10 @@ int main(){
     std::cout << "Printed values is: "<<d << " cc"<< std::endl;
 
      std::cin.ignore(5);
- while(std::cin){
-      e = std::cin.get();
- }
+    while(std::cin)
+    {
+        e = std::cin.get();
+    }
     std::cout << "e is " << e << " cc";
 
 
