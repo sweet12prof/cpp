@@ -8,17 +8,51 @@ void rowTransForm(const std::array<std::array<char, 5>, 5> &, std::string &, std
 void columnTransform(const std::array<std::array<char, 5>, 5> &, std::string &, std::string &);
 void BoxTransform(const std::array<std::array<char, 5>, 5> &, std::string &, std::string &);
 void FilterMessage( std::string & );
-void processMessage(std::string &);
+std::string EncryptMessage(std::string );
+std::string processMessage(std::string );
+
 
 int Column_1, row_1, Column_2, row_2;
 int TrColumn_1, Trrow_1, TrColumn_2, Trrow_2;
-
-std::string originalMessage{"chris"};
+std::string originalMessage{"chris is a fool"};
+std::string result = "";
+int FP, BP = 0;
 int main(){
+    
+    while(FP < originalMessage.size()){
+        std::string token = processMessage(originalMessage);
+        result = result + " " + EncryptMessage(token);
+         }
+    
+     std::cout <<std::endl  <<"Encrypted Token is : " << result << std::endl;
+   
+}
+
+std::string processMessage(std::string  someMessage){
+    std::string token = "";
+    while(FP < someMessage.size())
+        {
+            if(someMessage[FP] != ' '){
+                token += someMessage[FP];
+                FP++;
+            }
+                else {
+                  
+                    break;
+                }
+                    
+                   
+        }
+        FP++;
+        std::cout << "Current Token is: " << token << std::endl;
+    return token;
+}
+
+std::string EncryptMessage(std::string Input){
+
     std::array<std::array<char, 5>, 5> playFairTemplate {'m','o','n','a','r','c','h','y','b','d','e','f','g','i','k','l','p','q','s','t','u','v','w','x','z'};
     std::string currentPair;
-    
-    std::string message{originalMessage};
+    std::string message{Input};
     std::string encryptedMessage = "";
     std::string toEncrypt;
     
@@ -36,17 +70,10 @@ int main(){
             std::cout <<item << " \t";
         }
         std::cout << std::endl;
-    }
-       
-        // while(CurrentPosition != message.size() - 1){
-        //     if(message[CurrentPosition])
-        // }
-
-    
+    }  
         while(message != "") {
-
             
-            determineNextPair(message, currentPair, Count);
+             determineNextPair(message, currentPair, Count);
             //std::cout << std::endl << std::endl << std::endl;
 
             CatSwitch = determineCategory(playFairTemplate, currentPair);
@@ -69,10 +96,12 @@ int main(){
             
         }
 
-        std::cout << std::endl <<encryptedMessage;
-     
-   
+        //std::cout << std::endl <<encryptedMessage;
+        return encryptedMessage;
+
 }
+
+
 
 
 void FilterMessage( std::string & message){
