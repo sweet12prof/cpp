@@ -203,7 +203,7 @@ int determineCategory(const std::array<std::array<char, 5>, 5> & templateT  , st
 void rowTransForm(const std::array<std::array<char, 5>, 5> & playFairTemp, std::string & encryptMess, std::string &  currPair){
     
     int count = 0;
-
+    
     Trrow_1 = row_1;
     Trrow_2 = row_2; 
 
