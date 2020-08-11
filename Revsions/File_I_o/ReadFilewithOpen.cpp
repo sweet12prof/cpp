@@ -13,7 +13,7 @@ int main(){
     std::ofstream output;
     std::string inputName,inputNumber;
 
-    output.open("Tit.txt", std::ios::out);
+    output.open("clients.txt", std::ios::out);
     if(  !output){
                 std::cerr << "File could not be opened";
                 std::exit(EXIT_FAILURE);
