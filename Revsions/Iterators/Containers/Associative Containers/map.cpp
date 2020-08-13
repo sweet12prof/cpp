@@ -4,29 +4,34 @@
 #include <string>
 #include <iterator>
 
+ 
+    void  printMap(const std::map <int, std::string, std::less<int>> &);
 int main(){
-    std::multimap< int, double, std::less<int>> Firstmap{{1, 23.98}, {2, 2.0}, {2, 0.5}};
+    std::map <int, std::string, std::less<int>> mapCont{{10, "Chris"}, {11, "Melod"}, {-2, "mcMac"}, {-2, "mcNuts"}};
 
-    std::cout << "There are : " << Firstmap.count(2) << " Key pairs" << std::endl;
+    auto p{ mapCont.insert(std::pair{10, "Dimebag"} ) };
+    printMap(mapCont);
 
-    Firstmap.insert(std::make_pair(1, 0.3));
-    Firstmap.insert({15, 12.56});
+    std::cout << std::endl << std::endl << std::endl << "Element " << (p.second ? "has been inserted" : "already exists") << "\nThat element is " \
+              << (*p.first).first << " " << (*p.first).second << std::endl;
 
-    for(auto item : Firstmap)
-        std::cout << item.first << "\t" << item.second << std::endl;;
+    mapCont[10] = "AttaGob3";
+    mapCont[20] = "WaakyeBase";
 
-    // auto someVal = Firstmap.find(2);
-    // if(someVal == Firstmap.end())
-    //     std::cout << "The key value pair does not exist" << std::endl;
-//     else 
-//         {
-//             for(auto item : someVal)
-//                 std::cout << someVal;
-//         }
-// }
-    // auto res = Firstmap[2];
+    printMap(mapCont);
 
-    // for(auto item : Firstmap)
-    //     std::cout << *item.First << "\t" << *item.sedond;
-    
+    auto pis = mapCont.find(10);
+
+    if(pis == mapCont.end())
+        std::cout << std::endl << "Element not found " << std::endl;
+    else 
+        std::cout << "Element found is " << (*pis).first << " " <<pis->second << " " << std::endl; 
 }
+
+ void  printMap(const std::map <int, std::string, std::less<int>> & someMap){
+     for(auto item : someMap){
+         std::cout << item.first << " " << item.second;
+         std::cout << std::endl;
+     }
+        
+ }
