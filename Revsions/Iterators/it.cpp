@@ -41,6 +41,8 @@ int main(){
     std::cout << std::endl;
     lastVector.insert(lastVector.begin(), anotherVec.begin(), anotherVec.begin() + 2);
     std::copy(lastVector.begin(), lastVector.end(), printIntVectors);
+
+
 }
 
 template <typename T> void printVector(std::vector<T> & someSeq){
@@ -48,5 +50,6 @@ template <typename T> void printVector(std::vector<T> & someSeq){
         std::cout << *i << " ";
 
 
+v
 
 }
