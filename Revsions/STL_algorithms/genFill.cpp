@@ -44,15 +44,21 @@ int main(){
 
      std::cout << std::endl << "They are "  << (areEqual ? "equal" : "not equal");
 
-    auto mismatched = std::mismatch(someArray.begin(), someArray.end(), someVec.begin(), someArray.end()); 
-    misFunc(mismatched, someArray.end(), someVec.end());
+    auto mismatched = std::mismatch(someArray.begin(), someArray.end(), someVec.begin(), someVec.end()); 
+    //misFunc(mismatched, someArray.end(), someVec.end());
+
+     if(( mismatched.first == someArray.end()) && (mismatched.second == someVec.end()) )
+         std::cout << "They matched";
+     else 
+              std::cout << "They are mismatched at " << *(mismatched.first) << " " << *(mismatched.second);
+        
 
 }
 
 
-void misFunc(std::pair< std::array<int, 5>::iterator, std::vector<int>::iterator > somePair, std::array<int, 5>::iterator someEnd, std::vector<int>::iterator  anotherend){
-    if((somePair.first == someEnd) && (somePair.second == anotherend) )
-        std::cout << "They matched";
-    else 
-        std::cout << "They are mismatched at " << *(somePair.first) << " " << *(somePair.second);
-}
+// void misFunc(std::pair< std::array<int, 5>::iterator, std::vector<int>::iterator > somePair, std::array<int, 5>::iterator someEnd, std::vector<int>::iterator  anotherend){
+//     if((somePair.first == someEnd) && (somePair.second == anotherend) )
+//         std::cout << "They matched";
+//     else 
+//         std::cout << "They are mismatched at " << *(somePair.first) << " " << *(somePair.second);
+// }
