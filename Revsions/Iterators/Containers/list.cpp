@@ -72,7 +72,6 @@ int main(){
     std::cout << std::endl;
     printList(someList);
 
-    someList.
 
 }
 

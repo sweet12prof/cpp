@@ -42,7 +42,7 @@ int main(){
 
     areEqual = std::equal(someVec.begin(), someVec.end(), someArray.begin(), someArray.end());
 
-     std::cout << std::endl << "They are "  << (areEqual ? "equal" : "not equal");
+     std::cout << std::endl << "They are "  << (areEqual ? "equal" : "not equal") << std::endl;
 
     auto mismatched = std::mismatch(someArray.begin(), someArray.end(), someVec.begin(), someVec.end()); 
     //misFunc(mismatched, someArray.end(), someVec.end());
