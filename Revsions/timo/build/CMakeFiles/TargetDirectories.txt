@@ -1,0 +1,3 @@
+C:/Users/TI Lab/Desktop/timo/build/CMakeFiles/output.dir
+C:/Users/TI Lab/Desktop/timo/build/CMakeFiles/edit_cache.dir
+C:/Users/TI Lab/Desktop/timo/build/CMakeFiles/rebuild_cache.dir
