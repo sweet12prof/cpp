@@ -2,7 +2,7 @@
 #include <string>
 #include "./DivideByZero_derivedException.h"
 
-int main(){
+int main(){//Exceptions
     int quotient{0}, divisor{0};
     while(std::cin >> quotient >> divisor)
     {
