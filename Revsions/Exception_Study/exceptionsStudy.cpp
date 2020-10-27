@@ -15,5 +15,5 @@ int main(){//Exceptions
             std::cout << "Exception message : " << divExcpt.what();
         }
     }
-    std::cout << std::endl << std::endl;
+    std::cout << std::endl << std::endl << std::endl;
 }
