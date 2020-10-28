@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/sweet12prof/Desktop/Final/cpp/Revsions/Exception_Study/build",
+  "command": "/opt/rh/devtoolset-9/root/usr/bin/g++  -I/home/sweet12prof/Desktop/Final/cpp/Revsions/Exception_Study -g -o CMakeFiles/MyProject.dir/exceptionsStudy.cpp.o -c /home/sweet12prof/Desktop/Final/cpp/Revsions/Exception_Study/exceptionsStudy.cpp",
+  "file": "/home/sweet12prof/Desktop/Final/cpp/Revsions/Exception_Study/exceptionsStudy.cpp"
+}
+]

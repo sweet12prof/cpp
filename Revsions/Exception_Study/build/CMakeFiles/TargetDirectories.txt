@@ -1,0 +1,4 @@
+/home/sweet12prof/Desktop/Final/cpp/Revsions/Exception_Study/build/CMakeFiles/edit_cache.dir
+/home/sweet12prof/Desktop/Final/cpp/Revsions/Exception_Study/build/CMakeFiles/MyProject.dir
+/home/sweet12prof/Desktop/Final/cpp/Revsions/Exception_Study/build/CMakeFiles/rebuild_cache.dir
+/home/sweet12prof/Desktop/Final/cpp/Revsions/Exception_Study/build/CMakeFiles/Headers.dir

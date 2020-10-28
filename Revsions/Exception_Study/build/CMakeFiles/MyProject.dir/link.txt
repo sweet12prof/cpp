@@ -1,0 +1,1 @@
+/opt/rh/devtoolset-9/root/usr/bin/g++ -g CMakeFiles/MyProject.dir/exceptionsStudy.cpp.o -o MyProject  libHeaders.a 
