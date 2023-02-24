@@ -31,7 +31,11 @@ int main(){
     std::cout << "size of somePoly 3 is " << somePoly3.getSize() << std::endl; 
     somePoly3 = somePoly2 * somePoly3;
     std::cout << "size of somePoly3 is " << somePoly3.getSize() << std::endl;
-    std::cout << somePoly3;
+    std::cout << somePoly3 << std::endl << std::endl;
+
+    somePoly3 += somePoly3 += somePoly2 += somePoly;
+
+    std::cout << somePoly3 << std::endl;
 
 
 }

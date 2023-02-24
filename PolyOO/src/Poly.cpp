@@ -72,6 +72,38 @@ Poly& Poly::operator+(const Poly& poly){
     }   
 
 }
+
+Poly& Poly::operator-(const Poly& poly){
+   if (this->size > poly.getSize()){
+        std::size_t newSize{this->size}; //get order of larger polynomial
+
+        static Poly newPoly(newSize); //create a tempPolynomial which has the same order as larger polynomial
+        
+        for(auto i{0}; i<poly.getSize(); i++)
+            newPoly.polyArrPtr[i] = poly.polyArrPtr[i]; //write intial smaller polynomial into bigone, leave zero in high orders it doesnt possess
+        
+        for(auto i{0}; i<this->size; i++)
+            newPoly.polyArrPtr[i] -= this->polyArrPtr[i];
+        
+        return newPoly;
+   }
+   else 
+    {
+        std::size_t newSize{poly.getSize()};
+        static Poly newPoly(newSize);
+        
+        for(auto i{0}; i<this->size; i++)
+            newPoly.polyArrPtr[i] = this->polyArrPtr[i];
+
+        for(auto i{0}; i<this->size; i++)
+            newPoly.polyArrPtr[i] -= poly.polyArrPtr[i];
+
+        return newPoly;  
+
+    }   
+
+}
+
 Poly& Poly::operator*(const Poly& poly){
     std::size_t tempsize = this->size + poly.getSize();
     static Poly mulPoly(tempsize);
@@ -94,5 +126,17 @@ const Poly& Poly::operator=(const Poly& poly){
         for(auto i{0}; i<this->size; i++)
             this->polyArrPtr[i] = poly.polyArrPtr[i];
     }
+    return *this;
+}
+
+
+Poly& Poly::operator+=(const Poly& right){
+    *this = *this + right;
+    return *this;
+}
+
+
+Poly& Poly::operator-=(const Poly& right){
+    *this = *this - right;
     return *this;
 }

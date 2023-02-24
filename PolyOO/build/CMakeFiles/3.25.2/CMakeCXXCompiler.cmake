@@ -1,7 +1,7 @@
-set(CMAKE_CXX_COMPILER "C:/cygwin64/bin/c++.exe")
+set(CMAKE_CXX_COMPILER "/opt/rh/devtoolset-12/root/usr/bin/c++")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
-set(CMAKE_CXX_COMPILER_VERSION "11.3.0")
+set(CMAKE_CXX_COMPILER_VERSION "12.1.1")
 set(CMAKE_CXX_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_CXX_COMPILER_WRAPPER "")
 set(CMAKE_CXX_STANDARD_COMPUTED_DEFAULT "17")
@@ -14,7 +14,7 @@ set(CMAKE_CXX17_COMPILE_FEATURES "cxx_std_17")
 set(CMAKE_CXX20_COMPILE_FEATURES "cxx_std_20")
 set(CMAKE_CXX23_COMPILE_FEATURES "cxx_std_23")
 
-set(CMAKE_CXX_PLATFORM_ID "Cygwin")
+set(CMAKE_CXX_PLATFORM_ID "Linux")
 set(CMAKE_CXX_SIMULATE_ID "")
 set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "")
 set(CMAKE_CXX_SIMULATE_VERSION "")
@@ -22,11 +22,11 @@ set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "C:/cygwin64/bin/ar.exe")
-set(CMAKE_CXX_COMPILER_AR "C:/cygwin64/bin/gcc-ar.exe")
-set(CMAKE_RANLIB "C:/cygwin64/bin/ranlib.exe")
-set(CMAKE_CXX_COMPILER_RANLIB "C:/cygwin64/bin/gcc-ranlib.exe")
-set(CMAKE_LINKER "C:/cygwin64/bin/ld.exe")
+set(CMAKE_AR "/opt/rh/devtoolset-12/root/usr/bin/ar")
+set(CMAKE_CXX_COMPILER_AR "/opt/rh/devtoolset-12/root/usr/bin/gcc-ar")
+set(CMAKE_RANLIB "/opt/rh/devtoolset-12/root/usr/bin/ranlib")
+set(CMAKE_CXX_COMPILER_RANLIB "/opt/rh/devtoolset-12/root/usr/bin/gcc-ranlib")
+set(CMAKE_LINKER "/opt/rh/devtoolset-12/root/usr/bin/ld")
 set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCXX 1)
 set(CMAKE_CXX_COMPILER_LOADED 1)
@@ -52,7 +52,7 @@ set(CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES 1)
 
 # Save compiler ABI information.
 set(CMAKE_CXX_SIZEOF_DATA_PTR "8")
-set(CMAKE_CXX_COMPILER_ABI "")
+set(CMAKE_CXX_COMPILER_ABI "ELF")
 set(CMAKE_CXX_BYTE_ORDER "LITTLE_ENDIAN")
 set(CMAKE_CXX_LIBRARY_ARCHITECTURE "")
 
@@ -77,7 +77,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++;/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++/x86_64-pc-cygwin;/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++/backward;/usr/lib/gcc/x86_64-pc-cygwin/11/include;/usr/include;/usr/include/w32api")
-set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;gcc_s;gcc;cygwin;advapi32;shell32;user32;kernel32;gcc_s;gcc")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/usr/lib/gcc/x86_64-pc-cygwin/11;/usr/x86_64-pc-cygwin/lib;/usr/lib;/lib")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/opt/rh/devtoolset-12/root/usr/include/c++/12;/opt/rh/devtoolset-12/root/usr/include/c++/12/x86_64-redhat-linux;/opt/rh/devtoolset-12/root/usr/include/c++/12/backward;/opt/rh/devtoolset-12/root/usr/lib/gcc/x86_64-redhat-linux/12/include;/usr/local/include;/opt/rh/devtoolset-12/root/usr/include;/usr/include")
+set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;gcc_s;gcc;c;gcc_s;gcc")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/opt/rh/devtoolset-12/root/usr/lib/gcc/x86_64-redhat-linux/12;/opt/rh/devtoolset-12/root/usr/lib64;/lib64;/usr/lib64;/opt/rh/devtoolset-12/root/usr/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
