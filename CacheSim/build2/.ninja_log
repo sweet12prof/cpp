@@ -1,0 +1,11 @@
+# ninja log v6
+26	5943	7481598768689866	include/CMakeFiles/cache-lib.dir/cpp/DirectMapped.cpp.obj	a7891a72809bcea0
+13	6046	7481598768549107	include/CMakeFiles/cache-lib.dir/cpp/Cache.cpp.obj	127bd0e6bad0218f
+43	6145	7481598768880813	include/CMakeFiles/cache-lib.dir/cpp/Associative.cpp.obj	49d96f1d235331ab
+88	6465	7481598769308357	src/CMakeFiles/main.dir/main.cpp.obj	84866ca5ae8adb78
+64	6790	7481598769093056	include/CMakeFiles/cache-lib.dir/cpp/IdealLRU.cpp.obj	411ac937a66cb371
+6822	7023	7481598836612665	include/cache-lib.lib	a01bb152b33304ff
+7027	7848	7481598838652698	src/main.exe	7b9246a309d21c0b
+33	2855	7481599689188756	include/CMakeFiles/cache-lib.dir/cpp/IdealLRU.cpp.obj	411ac937a66cb371
+2859	2983	7481599717298964	include/cache-lib.lib	a01bb152b33304ff
+2985	3297	7481599718536529	src/main.exe	7b9246a309d21c0b

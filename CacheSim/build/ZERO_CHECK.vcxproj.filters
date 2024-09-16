@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\build\CMakeFiles\00973eacf4b7ae4bb0bd1024061d60e2\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{001562DC-1CFE-340C-997C-FB57EC55163A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

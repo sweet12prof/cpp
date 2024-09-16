@@ -1,0 +1,15 @@
+# ninja log v6
+25	1157	7480125737975647	src/CMakeFiles/main.dir/main.cpp.obj	84866ca5ae8adb78
+1110	1153	7480126537872912	include/cache-lib.lib	d39ed4bf6c51b1d7
+21	1250	7480125737929733	include/CMakeFiles/cache-lib.dir/cpp/DirectMapped.cpp.obj	a7891a72809bcea0
+16	1109	7480126526933934	include/CMakeFiles/cache-lib.dir/cpp/Cache.cpp.obj	127bd0e6bad0218f
+1154	1288	7480126538311480	src/main.exe	7b9246a309d21c0b
+18	1103	7480127234059782	src/CMakeFiles/main.dir/main.cpp.obj	84866ca5ae8adb78
+1105	1227	7480127244972200	src/main.exe	7b9246a309d21c0b
+15	1179	7480131364827945	src/CMakeFiles/main.dir/main.cpp.obj	84866ca5ae8adb78
+4	1182	7480131364710776	include/CMakeFiles/cache-lib.dir/cpp/Cache.cpp.obj	127bd0e6bad0218f
+9	1258	7480131364777369	include/CMakeFiles/cache-lib.dir/cpp/DirectMapped.cpp.obj	a7891a72809bcea0
+1259	1305	7480131377271879	include/cache-lib.lib	d39ed4bf6c51b1d7
+1305	1441	7480131377708269	src/main.exe	7b9246a309d21c0b
+4	1075	7480132500608739	src/CMakeFiles/main.dir/main.cpp.obj	84866ca5ae8adb78
+1077	1244	7480132511377722	src/main.exe	7b9246a309d21c0b

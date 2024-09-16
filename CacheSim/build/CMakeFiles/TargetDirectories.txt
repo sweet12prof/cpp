@@ -1,0 +1,4 @@
+C:/Users/Chris Nutsukpui/Desktop/CPP/BASE/CacheSim/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Chris Nutsukpui/Desktop/CPP/BASE/CacheSim/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Chris Nutsukpui/Desktop/CPP/BASE/CacheSim/build/include/CMakeFiles/cache-lib.dir
+C:/Users/Chris Nutsukpui/Desktop/CPP/BASE/CacheSim/build/src/CMakeFiles/main.dir

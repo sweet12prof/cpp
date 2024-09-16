@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\cpp\Cache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\cpp\DirectMapped.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\cpp\Associative.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\cpp\IdealLRU.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\hpp\Cache.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\hpp\DirectMapped.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\hpp\cacheline.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\hpp\Associative.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\hpp\ReplacementPolicy.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\hpp\IdealLRU.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{CC9CE5ED-FAC8-3350-9C36-3E8D9255E132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{99AE9AA5-E2C1-3570-8D99-825E6C2A658E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
