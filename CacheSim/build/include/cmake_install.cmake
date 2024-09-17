@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Chris Nutsukpui/Desktop/CPP/BASE/CacheSim/include
+# Install script for directory: C:/Users/Chris Nutsukpui/Desktop/CPP/cpp/CacheSim/include
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\src\main.cpp">
+    <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\src\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{99AE9AA5-E2C1-3570-8D99-825E6C2A658E}</UniqueIdentifier>
+      <UniqueIdentifier>{7A70B867-D425-3ECB-92D3-CBF18FE93B09}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

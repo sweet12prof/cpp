@@ -1,6 +1,10 @@
 #pragma once
 #include <print>
 #include <cacheline.hpp>
+#include <random>
+
+static std::random_device rd;
+static std::default_random_engine engine{rd()};
 
 class Cache{    
     public: 

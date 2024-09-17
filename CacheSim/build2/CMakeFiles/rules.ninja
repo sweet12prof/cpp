@@ -121,7 +121,7 @@ rule CXX_EXECUTABLE_LINKER__main_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim" -B"C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\build2"
+  command = "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim" -B"C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\build2"
   description = Re-running CMake...
   generator = 1
 

@@ -1,48 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\cpp\Cache.cpp">
+    <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\cpp\Cache.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\cpp\DirectMapped.cpp">
+    <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\cpp\DirectMapped.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\cpp\Associative.cpp">
+    <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\cpp\Associative.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\cpp\IdealLRU.cpp">
+    <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\cpp\IdealLRU.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\cpp\Random_replace.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\hpp\Cache.hpp">
+    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\hpp\Cache.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\hpp\DirectMapped.hpp">
+    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\hpp\DirectMapped.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\hpp\cacheline.hpp">
+    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\hpp\cacheline.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\hpp\Associative.hpp">
+    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\hpp\Associative.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\hpp\ReplacementPolicy.hpp">
+    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\hpp\ReplacementPolicy.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\hpp\IdealLRU.hpp">
+    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\hpp\IdealLRU.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\hpp\Random_replace.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Chris Nutsukpui\Desktop\CPP\BASE\CacheSim\include\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{CC9CE5ED-FAC8-3350-9C36-3E8D9255E132}</UniqueIdentifier>
+      <UniqueIdentifier>{586CC06A-58C9-3DB5-8BEA-361035F80874}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{99AE9AA5-E2C1-3570-8D99-825E6C2A658E}</UniqueIdentifier>
+      <UniqueIdentifier>{7A70B867-D425-3ECB-92D3-CBF18FE93B09}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

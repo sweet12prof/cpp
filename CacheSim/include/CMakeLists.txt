@@ -10,5 +10,7 @@
                     hpp/ReplacementPolicy.hpp
                     hpp/IdealLRU.hpp
                     cpp/IdealLRU.cpp
+                    hpp/Random_replace.hpp
+                    cpp/Random_replace.cpp
                 )
             target_include_directories(cache-lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/hpp)

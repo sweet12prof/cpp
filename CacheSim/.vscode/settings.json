@@ -49,6 +49,8 @@
         "xlocnum": "cpp",
         "xloctime": "cpp",
         "algorithm": "cpp",
-        "optional": "cpp"
+        "optional": "cpp",
+        "random": "cpp",
+        "ios": "cpp"
     }
 }
