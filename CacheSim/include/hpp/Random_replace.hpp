@@ -1,3 +1,4 @@
+#pragma once
 #include <ReplacementPolicy.hpp>
 #include <Associative.hpp>
 

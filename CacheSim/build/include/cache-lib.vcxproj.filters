@@ -16,6 +16,12 @@
     <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\cpp\Random_replace.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\cpp\FIFO_replace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\cpp\DirectMappedNoTag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\hpp\Cache.hpp">
@@ -37,6 +43,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\hpp\Random_replace.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\hpp\FIFO_replace.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\hpp\DirectMappedNoTag.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

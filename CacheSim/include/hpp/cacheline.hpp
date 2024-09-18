@@ -7,3 +7,5 @@ struct cacheline
     char validBit{'0'}, dirtyBit{'0'};
     std::string tag{""}; 
 };
+
+

@@ -1,6 +1,6 @@
 #pragma once
 #include <print>
-#include <cacheline.hpp>
+#include <bitset>
 #include <random>
 
 static std::random_device rd;
@@ -19,6 +19,9 @@ class Cache{
         std::string getTag(const unsigned int& )  const;
         std::size_t getIndex_i(const unsigned int&) const;
 
+        inline int getReadNum() const{return this->readNum;}
+        inline int getWriteNum() const{return this->writeNum;}
+
         inline int getassoc() const{
             return this->associaticity;
         }
@@ -33,6 +36,8 @@ class Cache{
          int addressBits{32};
          int hits{0};
          int misses{0};
+         int writeNum{0};
+         int readNum{0};
          int  numOfentries;
          int  tagBits;
          int  indexBits;

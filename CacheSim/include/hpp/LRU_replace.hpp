@@ -1,3 +1,4 @@
+#pragma once
 #include <ReplacementPolicy.hpp>
 
 class LRU_replace : public ReplacementPolicy

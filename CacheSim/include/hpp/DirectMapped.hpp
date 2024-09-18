@@ -3,6 +3,7 @@
 #include <Cache.hpp>
 #include <vector>
 #include <bitset>
+#include <cacheline.hpp>
 #include <string>
 #include <memory>
 class DirectMapped : public Cache{

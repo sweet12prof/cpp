@@ -72,7 +72,7 @@ void Associative::Write(const std::size_t& indexAddr){
                 break;
             }
         }
-
+    }
         if(wayfound == -1){ //ASSOCIative match missed
          this->misses++;
          for(std::size_t i{address}; i<address+this->getassoc(); i++){ //Look for an unused way
@@ -84,7 +84,7 @@ void Associative::Write(const std::size_t& indexAddr){
                 wayfound = (i-address);
                 break;
             }
-        }
+        } }
 
         if(wayfound == -1){ //If there wasnt any unused way, look for LRU
             std::size_t i = ReplacePolicy->Replace(address);
@@ -94,5 +94,3 @@ void Associative::Write(const std::size_t& indexAddr){
             this->line.at(addr).tag   = tagBits;
         }
     } 
-    }
-}

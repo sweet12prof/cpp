@@ -1,7 +1,7 @@
 #include <DirectMapped.hpp>
 
 DirectMapped::DirectMapped(const int& cSize, const int& bSize,  const int& assoc, const int& abits)
-:Cache(cSize, bSize, assoc, abits) {
+:Cache(cSize, bSize, 1, abits) {
     cacheline defline;
     line.reserve(this->numOfentries);
     for (std::size_t i{0}; i<numOfentries; i++)

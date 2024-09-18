@@ -277,6 +277,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\cpp\IdealLRU.cpp" />
     <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\hpp\Random_replace.hpp" />
     <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\cpp\Random_replace.cpp" />
+    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\hpp\FIFO_replace.hpp" />
+    <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\cpp\FIFO_replace.cpp" />
+    <ClInclude Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\hpp\DirectMappedNoTag.hpp" />
+    <ClCompile Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\cpp\DirectMappedNoTag.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\build\ZERO_CHECK.vcxproj">

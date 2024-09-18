@@ -12,5 +12,9 @@
                     cpp/IdealLRU.cpp
                     hpp/Random_replace.hpp
                     cpp/Random_replace.cpp
+                    hpp/FIFO_replace.hpp
+                    cpp/FIFO_replace.cpp
+                    hpp/DirectMappedNoTag.hpp
+                    cpp/DirectMappedNoTag.cpp
                 )
             target_include_directories(cache-lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/hpp)
