@@ -44,9 +44,11 @@ class Cache{
          int  offsetBits;
         
     private: 
-        int cacheSize{0};
-        int associaticity{0} ;
-        int blockSize{0};  
+        int     cacheSize{0};
+        int     associaticity{0} ;
+        int     blockSize{0};  
+        // float   hitRatio{0.0};
+        // float   missRatio{0.0};
 
  
 

@@ -29,7 +29,8 @@ void  Cache::bDisplaySpec() const{
     std::print("Number of Misses            : {}\n", this->misses);
     std::print("Number of Write Accesses    : {}\n", this->writeNum);
     std::print("Number of Read Accesses     : {}\n", this->readNum);
-
+    std::print("Hit Ratio                   : {:.2f}\n", static_cast<float>(this->hits)/(this->writeNum+this->readNum));
+    std::print("Miss Ratio                  : {:.2f}\n",  static_cast<float>(this->misses)/(this->writeNum+this->readNum));
     displaySpec();
 }
 

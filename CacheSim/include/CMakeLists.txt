@@ -16,5 +16,7 @@
                     cpp/FIFO_replace.cpp
                     hpp/DirectMappedNoTag.hpp
                     cpp/DirectMappedNoTag.cpp
+                    hpp/Sim.hpp
+                    cpp/Sim.cpp
                 )
             target_include_directories(cache-lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/hpp)

@@ -5,6 +5,7 @@
 #include <FIFO_replace.hpp>
 #include <stdexcept>
 #include <DirectMappedNoTag.hpp>
+#include <Sim.hpp>
 
 void DoRead(std::size_t&, Cache&);
 void DoWrite(std::size_t&, Cache&);
@@ -13,7 +14,7 @@ void DoTest(std::vector<std::size_t>& , Cache&);
 int main(){
     int csize{8};
     int bsize{16};
-    int assoc{4};
+    int assoc{8};
     int abit{32};
 
     unsigned int addr1{0b10101011010011011110111100010010};
@@ -36,27 +37,30 @@ int main(){
   std::vector <std::size_t> someVec {A, B, C, D, E, F, G, H};
 
 
-    Associative Che2(csize, bsize, assoc, abit);
+    // Associative Che2(csize, bsize, assoc, abit);
+    // // Che2.bDisplaySpec();
+
+    // DirectMappedNoTag Che3(csize, bsize, assoc, abit);
+    // Che3.ValidateAllEntries();
+   
+    // Che2.InitialiseReplacementPolicy(std::make_unique<IdealLRU>(Che2));
+    // std::print("\n_____________Before Trace Drive___________\n");
+    //  Che2.bDisplaySpec();
+    // DoTest(someVec, Che2);
+    //  std::print("\n_____________After Trace Drive___________\n");
     // Che2.bDisplaySpec();
 
-    DirectMappedNoTag Che3(csize, bsize, assoc, abit);
-    Che3.ValidateAllEntries();
-   
-    Che2.InitialiseReplacementPolicy(std::make_unique<IdealLRU>(Che2));
-    std::print("\n_____________Before Trace Drive___________\n");
-     Che2.bDisplaySpec();
-    DoTest(someVec, Che2);
-     std::print("\n_____________After Trace Drive___________\n");
-    Che2.bDisplaySpec();
-
-    std::print("\n\n");
-    std::print("\n_____________Before Trace Drive___________\n");
-    Che3.bDisplaySpec();
-    DoTest(someVec, Che3);
-    std::print("\n_____________After Trace Drive___________\n");
-    Che3.bDisplaySpec();
-
-
+    // std::print("\n\n");
+    // std::print("\n_____________Before Trace Drive___________\n");
+    // Che3.bDisplaySpec();
+    // DoTest(someVec, Che3);
+    // std::print("\n_____________After Trace Drive___________\n");
+    // Che3.bDisplaySpec();
+   std::string path {"C:\\pinatrace2.out"};
+     
+    TraceDrivenSim Sim(path);
+    //std::print("{} ", path);
+     Sim.processFile();
 
 
 }
@@ -76,17 +80,18 @@ void DoTest(std::vector<std::size_t>& stimVec, Cache& Cache1){
     int f =static_cast<int> (stimVec.size()); f--;
     std::uniform_int_distribution dist1{0, f};
     std::uniform_int_distribution dist2{0, 1};
-    std::random_device rd2;
-    std::mt19937 engine1{rd2()};
+   // std::random_device rd2;
+   // std::mt19937 engine1{rd2()};
     int j{0};
     int rCount{0}, wCount{0};
-    // std::mt19937 engine2{rd2()};
+    //std::mt19937 engine2{rd2()};
 
     for(auto i{0}; i <100; i++){
-      bool abs = static_cast<bool>(dist2(engine1));
+     //bool abs = static_cast<bool>(dist2(engine));
+     bool abs{true};
       switch(abs){
         case true : 
-          j = dist1(engine1);
+          j = engine() % stimVec.size();//dist1(engine);
           try {
           DoRead(stimVec.at(j), Cache1);
           rCount++;
@@ -96,7 +101,7 @@ void DoTest(std::vector<std::size_t>& stimVec, Cache& Cache1){
           break;
         
         case false: 
-           j = dist1(engine1);
+           j = engine() % stimVec.size();//dist1(engine);
            try{
             DoWrite(stimVec.at(j), Cache1);
             wCount++;

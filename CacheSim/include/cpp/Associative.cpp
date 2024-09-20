@@ -78,7 +78,7 @@ void Associative::Write(const std::size_t& indexAddr){
          for(std::size_t i{address}; i<address+this->getassoc(); i++){ //Look for an unused way
             if(this->line.at(i).validBit == '0'){
                 this->line.at(i).validBit = '1';
-                this->line.at(i).dirtyBit = '1';
+                this->line.at(i).dirtyBit = '0';
                 this->line.at(i).tag   = tagBits;
                 this->ReplacePolicy->trackLRU(address, (i-address));
                 wayfound = (i-address);
@@ -90,7 +90,7 @@ void Associative::Write(const std::size_t& indexAddr){
             std::size_t i = ReplacePolicy->Replace(address);
             std::size_t addr{address + i};
             this->line.at(addr).validBit = '1';
-            this->line.at(addr).dirtyBit = '1';
+            this->line.at(addr).dirtyBit = '0';
             this->line.at(addr).tag   = tagBits;
         }
     } 

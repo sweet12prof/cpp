@@ -134,6 +134,14 @@ build include\CMakeFiles\cache-lib.dir\cpp\DirectMappedNoTag.cpp.obj: CXX_COMPIL
   TARGET_COMPILE_PDB = include\CMakeFiles\cache-lib.dir\cache-lib.pdb
   TARGET_PDB = include\cache-lib.pdb
 
+build include\CMakeFiles\cache-lib.dir\cpp\Sim.cpp.obj: CXX_COMPILER__cache-lib_unscanned_Debug C$:\Users\Chris$ Nutsukpui\Desktop\CPP\cpp\CacheSim\include\cpp\Sim.cpp || cmake_object_order_depends_target_cache-lib
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++latest -MDd
+  INCLUDES = -I"C:\Users\Chris Nutsukpui\Desktop\CPP\cpp\CacheSim\include\hpp"
+  OBJECT_DIR = include\CMakeFiles\cache-lib.dir
+  OBJECT_FILE_DIR = include\CMakeFiles\cache-lib.dir\cpp
+  TARGET_COMPILE_PDB = include\CMakeFiles\cache-lib.dir\cache-lib.pdb
+  TARGET_PDB = include\cache-lib.pdb
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target cache-lib
@@ -142,7 +150,7 @@ build include\CMakeFiles\cache-lib.dir\cpp\DirectMappedNoTag.cpp.obj: CXX_COMPIL
 #############################################
 # Link the static library include\cache-lib.lib
 
-build include\cache-lib.lib: CXX_STATIC_LIBRARY_LINKER__cache-lib_Debug include\CMakeFiles\cache-lib.dir\cpp\Cache.cpp.obj include\CMakeFiles\cache-lib.dir\cpp\DirectMapped.cpp.obj include\CMakeFiles\cache-lib.dir\cpp\Associative.cpp.obj include\CMakeFiles\cache-lib.dir\cpp\IdealLRU.cpp.obj include\CMakeFiles\cache-lib.dir\cpp\Random_replace.cpp.obj include\CMakeFiles\cache-lib.dir\cpp\FIFO_replace.cpp.obj include\CMakeFiles\cache-lib.dir\cpp\DirectMappedNoTag.cpp.obj
+build include\cache-lib.lib: CXX_STATIC_LIBRARY_LINKER__cache-lib_Debug include\CMakeFiles\cache-lib.dir\cpp\Cache.cpp.obj include\CMakeFiles\cache-lib.dir\cpp\DirectMapped.cpp.obj include\CMakeFiles\cache-lib.dir\cpp\Associative.cpp.obj include\CMakeFiles\cache-lib.dir\cpp\IdealLRU.cpp.obj include\CMakeFiles\cache-lib.dir\cpp\Random_replace.cpp.obj include\CMakeFiles\cache-lib.dir\cpp\FIFO_replace.cpp.obj include\CMakeFiles\cache-lib.dir\cpp\DirectMappedNoTag.cpp.obj include\CMakeFiles\cache-lib.dir\cpp\Sim.cpp.obj
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = include\CMakeFiles\cache-lib.dir

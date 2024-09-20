@@ -51,6 +51,11 @@
         "algorithm": "cpp",
         "optional": "cpp",
         "random": "cpp",
-        "ios": "cpp"
+        "ios": "cpp",
+        "fstream": "cpp",
+        "iostream": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "sstream": "cpp"
     }
 }
