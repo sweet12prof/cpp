@@ -29,6 +29,7 @@ void Associative::Read(const std::size_t& indexAddr ){
                 wayfound = i-address;
                 ReplacePolicy->trackLRU(address, (i-address));
                 this->hits++;
+                this->read_hits++;
                 break;
             }
         }
@@ -36,6 +37,7 @@ void Associative::Read(const std::size_t& indexAddr ){
 
     if(wayfound == -1){ //ASSOCIative match missed
          this->misses++;
+         this->read_misses++;
          for(std::size_t i{address}; i<address+this->getassoc(); i++){ //Look for an unused way
             if(this->line.at(i).validBit == '0'){
                 this->line.at(i).validBit = '1';
@@ -68,6 +70,7 @@ void Associative::Write(const std::size_t& indexAddr){
                 wayfound = i-address;
                 ReplacePolicy->trackLRU(address, (i-address));
                 this->hits++;
+                this->write_hits++;
                 this->line.at(i).dirtyBit = '1';    //mark dirty
                 break;
             }
@@ -75,6 +78,7 @@ void Associative::Write(const std::size_t& indexAddr){
     }
         if(wayfound == -1){ //ASSOCIative match missed
          this->misses++;
+         this->write_misses++;
          for(std::size_t i{address}; i<address+this->getassoc(); i++){ //Look for an unused way
             if(this->line.at(i).validBit == '0'){
                 this->line.at(i).validBit = '1';

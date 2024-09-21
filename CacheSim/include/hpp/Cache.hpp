@@ -15,9 +15,9 @@ class Cache{
         void bWrite(const std::size_t &);
         void bDisplaySpec() const;
         //helpers
-        std::string getIndex(const unsigned int&) const;
-        std::string getTag(const unsigned int& )  const;
-        std::size_t getIndex_i(const unsigned int&) const;
+        std::string getIndex(const std::size_t &) const;
+        std::string getTag(const std::size_t & )  const;
+        std::size_t getIndex_i(const std::size_t &) const;
 
         inline int getReadNum() const{return this->readNum;}
         inline int getWriteNum() const{return this->writeNum;}
@@ -42,6 +42,10 @@ class Cache{
          int  tagBits;
          int  indexBits;
          int  offsetBits;
+         int read_misses{0};
+         int read_hits{0};
+         int write_misses{0};
+         int write_hits{0};
         
     private: 
         int     cacheSize{0};

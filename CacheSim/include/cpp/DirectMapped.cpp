@@ -17,17 +17,20 @@ void DirectMapped::Read(const std::size_t& address){
     std::string tagBits{DirectMapped::getTag(address)};
     if(this->line.at(indexAddr).validBit == '0'){ //no valid data at location, read miss
         this->misses++;
+        this->read_misses++;
         this->line.at(indexAddr).validBit = '1';
         this->line.at(indexAddr).dirtyBit = '0';
         this->line.at(indexAddr).tag      = tagBits;
     } else{
         if(this->line.at(indexAddr).tag != tagBits){ //valid data but miss, read miss
             this->misses++;
+            this->read_misses++;
             this->line.at(indexAddr).dirtyBit  = '0';
             this->line.at(indexAddr).tag       = tagBits; 
         }
         else {  //valid data and hit, read hit
             this->hits++;
+            this->read_hits++;
         }
     }
 } 
@@ -38,17 +41,20 @@ void DirectMapped::Write(const std::size_t& address){
     std::string tagBits{DirectMapped::getTag(address)};
      if(this->line.at(indexAddr).validBit == '0'){ //no valid data at location, write miss
         this->misses++;
+        this->write_misses++;
         this->line.at(indexAddr).validBit = '1';
         this->line.at(indexAddr).dirtyBit = '1';
         this->line.at(indexAddr).tag      = tagBits;
     } else{
         if(this->line.at(indexAddr).tag != tagBits){ //valid data but miss
             this->misses++;
+            this->write_misses++;
             this->line.at(indexAddr).dirtyBit  = '1';
             this->line.at(indexAddr).tag       = tagBits; 
         }
         else {  //valid data and hit
             this->hits++;
+            this->write_hits++;
             this->line.at(indexAddr).dirtyBit  = '1';
         }
     }
