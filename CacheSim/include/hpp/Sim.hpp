@@ -11,22 +11,25 @@ class TraceDrivenSim{
        TraceDrivenSim(const std::string&);
        ~TraceDrivenSim();
         
-        std::vector<std::string> processChunk(const std::string&);
         void processFile(Cache&);
-        void makeAccess( std::vector<std::string>&, Cache&);
         std::string path;
         uint64_t count{0};
-        std::string readChunk();
-
+       
         void DoRead( const std::size_t, Cache&);
         void DoWrite( const std::size_t, Cache&);
-        //void DoTest(std::vector<std::size_t>& , Cache&);
+        
 
     private:
-       // Cache& cache;
+        //class utilities
         static std::ifstream FILE;
-        std::string leftover, chunk;
-        std::size_t currLocation;
-        inline const static std::size_t BUFFERSIZE = 128;
+        std::string leftover{""}, chunk{""};
+        std::size_t currLocation{0};
+        std::vector<char> Buffer;
+        std::vector<std::string> transformedChunk{""};
+        inline const static std::size_t BUFFERSIZE = 1024*20;
        
+       
+        void processChunk(); 
+        void makeAccess( Cache&);
+        void readChunk();
 };

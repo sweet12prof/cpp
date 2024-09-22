@@ -10,12 +10,12 @@
 
 
 int main(){
-    int csize{64};
-    int bsize{32};
-    int assoc{8};
-    int abit{32};
+    int csize{16};
+    int bsize{16};
+    int assoc{1};
+    int abit{64};
 
-    std::string path {"C:\\mcf.trace\\trace.out"};
+    std::string path {"C:\\pinatrace2.out"};
     TraceDrivenSim Sim(path);
     
     Associative Che2(csize, bsize, assoc, abit);

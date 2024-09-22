@@ -30,7 +30,7 @@ class Cache{
             return this->numOfentries;
         };
 
-    const inline static int aBus{32}; 
+    const inline static int aBus{64}; 
 
     protected:
          int addressBits{32};
