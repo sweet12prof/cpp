@@ -1,0 +1,10 @@
+^C:\USERS\CHRIS NUTSUKPUI\DESKTOP\CPP\CPP\FILEREVISION\SEQUENTIALACCESS\BUILD\CMAKEFILES\F997596F43BD54A9F34BF0F018757935\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Chris Nutsukpui/Desktop/CPP/cpp/FileRevision/SequentialAccess" "-BC:/Users/Chris Nutsukpui/Desktop/CPP/cpp/FileRevision/SequentialAccess/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Chris Nutsukpui/Desktop/CPP/cpp/FileRevision/SequentialAccess/build/PackageProj.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
