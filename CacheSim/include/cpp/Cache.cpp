@@ -4,9 +4,9 @@ Cache::Cache(const int& cSize, const int& bSize, const int& assoc, const int& aB
 :cacheSize{cSize}, associaticity{assoc}, blockSize{bSize}, addressBits{aBits}, hits{0}, misses{0}, writeNum{0}, readNum{0},
 read_hits{0}, read_misses{0}, write_hits{0}, write_misses{0}
 {
-    this->numOfentries = ((cSize * 1024)/(bSize * assoc));
+    this->numOfentries = ((cSize * 1024)/((bSize) * assoc));
     this->indexBits = log2(this->numOfentries);
-    this->offsetBits = log2(bSize);
+    this->offsetBits = log2((bSize));
     this->tagBits = this->addressBits - (this->indexBits + offsetBits);
     // this->engine(rd);
 }

@@ -1,0 +1,18 @@
+# ninja log v6
+30	2096	7474279074148125	src/CMakeFiles/main.dir/main.cpp.obj	7f840af85200818
+28	2304	7474276554286214	include/CMakeFiles/MyArrayLib.dir/cpp/MyArray.cpp.obj	dbeda8203db0b349
+2309	2396	7474276577085088	include/MyArrayLib.lib	74d38a795da183cc
+2099	2356	7474279094828196	src/main.exe	5aa677fd378fae9c
+28	2186	7474280528033345	src/CMakeFiles/main.dir/main.cpp.obj	7f840af85200818
+2190	2564	7474280549632396	src/main.exe	5aa677fd378fae9c
+31	2809	7474282631524314	include/CMakeFiles/MyArrayLib.dir/cpp/MyArray.cpp.obj	dbeda8203db0b349
+19	2627	7474283797489804	src/CMakeFiles/main.dir/main.cpp.obj	7f840af85200818
+9	2945	7474283797387124	include/CMakeFiles/MyArrayLib.dir/cpp/MyArray.cpp.obj	dbeda8203db0b349
+2947	3045	7474283826723558	include/MyArrayLib.lib	74d38a795da183cc
+3046	3400	7474283827751683	src/main.exe	5aa677fd378fae9c
+25	2168	7474284031168175	src/CMakeFiles/main.dir/main.cpp.obj	7f840af85200818
+2173	2416	7474284052632326	src/main.exe	5aa677fd378fae9c
+23	2039	7474284435416136	src/CMakeFiles/main.dir/main.cpp.obj	7f840af85200818
+2043	2296	7474284455606998	src/main.exe	5aa677fd378fae9c
+27	2101	7474285057726403	src/CMakeFiles/main.dir/main.cpp.obj	7f840af85200818
+2105	2350	7474285078495978	src/main.exe	5aa677fd378fae9c

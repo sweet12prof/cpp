@@ -1,0 +1,5 @@
+# ninja log v6
+4	477	7656831458963443	CMakeFiles/main.dir/main.cpp.obj	16478d2f6fa59c0e
+479	625	7656831463710602	main.exe	9e883b7dbb41e491
+2	539	7656785714441334	CMakeFiles/dListLib.dir/dList.cpp.obj	fe94fcb1ed509ddb
+2	18	7656785712122286	clean	29c8fc5f2c7b9e50

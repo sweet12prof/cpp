@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.14.1"/>
+    <errors>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;format&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;format&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="main.cpp" line="1"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="main.cpp" line="2"/>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="main.cpp">
+            <location file="main.cpp" line="10"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;p&amp;#039; is redundant or there is possible null pointer dereference: p." verbose="Either the condition &amp;#039;p&amp;#039; is redundant or there is possible null pointer dereference: p." cwe="476" file0="main.cpp">
+            <location file="main.cpp" line="19" info="Null pointer dereference"/>
+            <location file="main.cpp" line="20" info="Assuming that condition &amp;#039;p&amp;#039; is not redundant"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;x&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;x&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="main.cpp">
+            <location file="main.cpp" line="19"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;p&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;p&amp;#039; can be declared as pointer to const" cwe="398" file0="main.cpp">
+            <location file="main.cpp" line="16"/>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: c" verbose="Unused variable: c" cwe="563" file0="main.cpp">
+            <location file="main.cpp" line="26"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 of 151 configurations. Use --force to check all configurations." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time." cwe="398">
+            <location file="build\CMakeFiles\3.28.3\CompilerIdC\CMakeCCompilerId.c" line="0"/>
+        </error>
+        <error id="toomanyconfigs" severity="information" msg="Too many #ifdef configurations - cppcheck only checks 12 of 149 configurations. Use --force to check all configurations." verbose="The checking of the file will be interrupted because there are too many #ifdef configurations. Checking of all #ifdef configurations can be forced by --force command line option or from GUI preferences. However that may increase the checking time." cwe="398">
+            <location file="build\CMakeFiles\3.28.3\CompilerIdCXX\CMakeCXXCompilerId.cpp" line="0"/>
+        </error>
+    </errors>
+</results>

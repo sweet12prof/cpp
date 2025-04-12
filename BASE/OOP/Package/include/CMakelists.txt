@@ -1,0 +1,27 @@
+add_library(
+    pack_lib 
+    headers/pack.hpp
+    headers/twoDayPack.hpp
+    headers/costModel.hpp
+    headers/TwoDayCost.hpp
+    headers/pack_DImethod.hpp
+    src/twoDayPack.cpp
+    src/pack.cpp
+    src/TwoDayCost.cpp
+    src/pack_DImethod.cpp
+)
+
+add_library(
+    user_lib
+    headers/users.hpp
+    src/users.cpp
+)
+
+# add_library(
+#     Twwodaypack_lib
+#     headers/users.hpp
+#     src/users.cpp
+# )
+
+target_include_directories(pack_lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/headers)
+target_include_directories(user_lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/headers)

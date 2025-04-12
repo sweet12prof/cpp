@@ -1,15 +1,12 @@
 # ninja log v6
-25	1157	7480125737975647	src/CMakeFiles/main.dir/main.cpp.obj	84866ca5ae8adb78
-1110	1153	7480126537872912	include/cache-lib.lib	d39ed4bf6c51b1d7
-21	1250	7480125737929733	include/CMakeFiles/cache-lib.dir/cpp/DirectMapped.cpp.obj	a7891a72809bcea0
-16	1109	7480126526933934	include/CMakeFiles/cache-lib.dir/cpp/Cache.cpp.obj	127bd0e6bad0218f
-1154	1288	7480126538311480	src/main.exe	7b9246a309d21c0b
-18	1103	7480127234059782	src/CMakeFiles/main.dir/main.cpp.obj	84866ca5ae8adb78
-1105	1227	7480127244972200	src/main.exe	7b9246a309d21c0b
-15	1179	7480131364827945	src/CMakeFiles/main.dir/main.cpp.obj	84866ca5ae8adb78
-4	1182	7480131364710776	include/CMakeFiles/cache-lib.dir/cpp/Cache.cpp.obj	127bd0e6bad0218f
-9	1258	7480131364777369	include/CMakeFiles/cache-lib.dir/cpp/DirectMapped.cpp.obj	a7891a72809bcea0
-1259	1305	7480131377271879	include/cache-lib.lib	d39ed4bf6c51b1d7
-1305	1441	7480131377708269	src/main.exe	7b9246a309d21c0b
-4	1075	7480132500608739	src/CMakeFiles/main.dir/main.cpp.obj	84866ca5ae8adb78
-1077	1244	7480132511377722	src/main.exe	7b9246a309d21c0b
+29	1976	7525273397875591	include/CMakeFiles/cache-lib.dir/cpp/FIFO_replace.cpp.obj	ff3ec8e75bee63f2
+10	1983	7525273397711059	include/CMakeFiles/cache-lib.dir/cpp/DirectMapped.cpp.obj	c7a7848728484ac1
+24	1998	7525273397875591	include/CMakeFiles/cache-lib.dir/cpp/Random_replace.cpp.obj	f95b6302592f9253
+34	2020	7525273397875591	include/CMakeFiles/cache-lib.dir/cpp/DirectMappedNoTag.cpp.obj	94b362538e1e4f5d
+44	2081	7525273398093753	src/CMakeFiles/main.dir/main.cpp.obj	6d463f0a9f03d33d
+4	2105	7525273397684872	include/CMakeFiles/cache-lib.dir/cpp/Cache.cpp.obj	ab6de8b94731708d
+19	2116	7525273397711059	include/CMakeFiles/cache-lib.dir/cpp/IdealLRU.cpp.obj	31d63032a932a538
+15	2163	7525273397711059	include/CMakeFiles/cache-lib.dir/cpp/Associative.cpp.obj	545420e77506dceb
+38	2226	7525273398038372	include/CMakeFiles/cache-lib.dir/cpp/Sim.cpp.obj	9f1fb9d5b7afcfdf
+2227	2316	7525273419864079	include/cache-lib.lib	77e3521c01850ec9
+2317	2638	7525273420804736	src/main.exe	d9df1ebf1cab7d93

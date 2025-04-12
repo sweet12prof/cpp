@@ -1,0 +1,3 @@
+namespace Hello{
+    void printHello();
+};

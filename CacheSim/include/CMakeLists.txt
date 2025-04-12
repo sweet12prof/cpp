@@ -1,5 +1,5 @@
             add_library(
-                    cache-lib
+                    cache-lib STATIC
                     hpp/Cache.hpp
                     cpp/Cache.cpp
                     hpp/DirectMapped.hpp

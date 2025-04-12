@@ -1,0 +1,11 @@
+# ninja log v6
+21	494	7470649713245828	include/CMakeFiles/uniqLib.dir/src/uniqPtr.cpp.obj	fd32572df4d435bc
+1034	1267	7470628667281444	src/main.exe	ab78d90252c20d8d
+496	736	7470649717991333	include/uniqLib.lib	9e7b8529ec00eee1
+2	1032	7470628656951259	src/CMakeFiles/main.dir/main.cpp.obj	9efd0c3077d925b8
+496	736	7470649717991333	include/uniqLib.dll	9e7b8529ec00eee1
+1	104	7470649942403475	build.ninja	28ffa9a3e92496c1
+9	108	7470649942403475	build.ninja	28ffa9a3e92496c1
+15	52	7470649942802730	include/CMakeFiles/uniqLib.dir/src/uniqPtr.cpp.obj	21d134d2c39526da
+54	93	7470649943193666	include/uniqLib.lib	13bf98891f4e972f
+93	191	7470649943574417	src/main.exe	ab78d90252c20d8d
